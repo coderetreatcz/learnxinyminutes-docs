@@ -3,33 +3,35 @@
 language: c#
 contributors:
     - ["Irfan Charania", "https://github.com/irfancharania"]
+    - ["Aleš Roubíček", "http://github.com/rarous"]
 filename: LearnCSharp.cs
+lang: cs-cz
 
 ---
 
 C# is an elegant and type-safe object-oriented language that enables developers to build a variety of secure and robust applications that run on the .NET Framework.
 
-[Read more here.](http://msdn.microsoft.com/en-us/library/vstudio/z1zx9t92.aspx)
+[Úvod do jazyka C# na MSDN.](http://msdn.microsoft.com/cs-cz/library/vstudio/z1zx9t92.aspx)
 
 ```c#
-// Single-line comments start with //
+// Jednořádkové komentáře začínjí //
 /*
-Multi-line comments look like this
+Takto vypadá víceřádkový komentář
 */
 /// <summary>
-/// This is an XML documentation comment
+/// Takto vypadá XML dokumentační komentář
 /// </summary>
 
-// Specify namespaces application will be using
+// Jmenné prostory, které se v kódu užívají
 using System;
 using System.Collections.Generic;
 
 
-// defines scope to organize code into "packages"
+// Jmenné prostory slouží k virtuální organizaci kódu
 namespace Learning
 {
-    // Each .cs file should at least contain a class with the same name as the file
-    // you're allowed to do otherwise, but shouldn't for sanity.
+    // Každý .cs soubor by měl obshavot alespoň jeden typ stejného jména.
+    // Je možné tuto konvenci nedodržovat, ale nedoporučeje se to.
     public class LearnCSharp
     {
         // A console application must have a main method as an entry point
